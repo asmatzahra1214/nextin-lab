@@ -17,12 +17,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('Components.Navbar');
-});
-Route::get('/home', function () {
-    return view('Pages.Home');
-});
+// Route::get('/', function () {
+//     return view('Components.Navbar');
+// });
+
 // Route::get('/', function () {
 //     return view('Components.Sidebar');
 // });
@@ -33,7 +31,9 @@ Route::get('/home', function () {
 //     return view('Components.Footer');
 
 // });
-
+Route::get('/', function () {
+    return view('pages.home');
+});
 
 Route::get('/projects', function () {
     return view('pages.projects');
