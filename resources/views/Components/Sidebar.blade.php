@@ -1,53 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Sidebar</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.7/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .sidebar {
-            transition: transform 0.3s ease;
-        }
-        @media (max-width: 768px) {
-            .sidebar {
-                transform: translateX(-100%);
-            }
-            .sidebar.active {
-                transform: translateX(0);
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Sidebar</title>
+
+<!-- Google Fonts: Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+       font-family: 'Poppins', sans-serif;
+        display: flex;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+        width: 230px;
+        background-color: rgba(13, 94, 73, 1);
+        color: white;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        padding: 0;
+    }
+
+    .sidebar h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+        padding: 12px 15px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar ul li a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: white;
+        transition: background 0.3s;
+        font-weight: 400;
+    }
+
+    .sidebar ul li a:hover {
+        color: black;
+        background: linear-gradient(
+            135deg,
+            rgba(28, 150, 118, 1) 0%,
+            rgba(13, 94, 73, 1) 100%
+        );
+    }
+
+    /* Main content for testing */
+    .content {
+        flex: 1;
+        padding: 20px;
+    }
+    .navbar-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem; /* Adjust for navbar height */
+    font-weight: 600;
+    line-height: 60px; /* Match navbar height */
+    margin: 0;
+    padding: 0;
+    color: white; /* or your navbar text color */
+}
+</style>
 </head>
-<body class="bg-gray-100">
-    
-    <nav class="sidebar fixed top-0 left-0 w-64 bg-gray-50 shadow-lg h-full p-6 z-40" role="navigation" aria-label="Course navigation">
-        <h2 class="text-2xl font-semibold text-gray-800 border-b-2 border-blue-200 pb-4 mb-6">Courses</h2>
-        <ul class="list-none space-y-4">
-            <li>
-                <a href="# class="no-underline text-gray-700 hover:text-green-600 hover:bg-blue-50 block px-4 py-2 rounded transition-colors duration-200">Web Development</a>
-            </li>
-            <li>
-                <a href=# class="no-underline text-gray-700 hover:text-green-600 hover:bg-blue-50 block px-4 py-2 rounded transition-colors duration-200">Mobile App Development</a>
-            </li>
-            <li>
-                <a href=# class="no-underline text-gray-700 hover:text-green-600 hover:bg-blue-50 block px-4 py-2 rounded transition-colors duration-200">Data Science</a>
-            </li>
-            <li>
-                <a href=# class="no-underline text-gray-700 hover:text-green-600 hover:bg-blue-50 block px-4 py-2 rounded transition-colors duration-200">Cyber Security</a>
-            </li>
-            <li>
-                <a href=# class="no-underline text-gray-700 hover:text-green-600 hover:bg-blue-50 block px-4 py-2 rounded transition-colors duration-200">Graphic Design</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="ml-64 p-6">
-        <!-- Main content placeholder -->
-        <p class="text-gray-600">Main content goes here.</p>
-    </div>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+   
+<h2 class="navbar-title">NextIn Lab</h2>
+    <ul>
+        <li><a href="#">LEARN HTML</a></li>
+        <li><a href="#">LEARN CSS</a></li>
+        <li><a href="#">LEARN SASS</a></li>
+        <li><a href="#">LEARN Bootstrap</a></li>
+        <li><a href="#">LEARN JavaScript</a></li>
+        <li><a href="#">LEARN Advance Js</a></li>
+        <li><a href="#">LEARN jQuery</a></li>
+        <li><a href="#">LEARN PHP</a></li>
+        <li><a href="#">LEARN MySQL</a></li>
+        <li><a href="#">LEARN SVG</a></li>
+    </ul>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+    <h1>Welcome to Nextin Lab</h1>
+    <p>Scroll down to test sticky sidebar.</p>
+    <p style="height:2000px;"></p>
+</div>
+
 </body>
 </html>

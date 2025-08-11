@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'home')
 
 @section('sidebar')
     @include('Components.Sidebar')
 @endsection
-
+   
 @section('content')
-    <h1>Hy, home page here</h1>
+    <h1> hy home page here</h1>
     <p>Welcome to the homepage of my Laravel app.</p>
 @endsection

@@ -5,21 +5,21 @@
 </head>
 <body style="margin:0; font-family: Arial, sans-serif;">
 
-    {{-- Topbar --}}
-    @include('Components.Topbar')
+   
 
     {{-- Navbar --}}
-    @include('Components.Navbar')
+    <div>@include('Components.Navbar')</div>
+    
 
     <div style="display: flex;">
 
         {{-- Sidebar (changes per page) --}}
-        <div style="width: 250px; background-color: #004aad; color: white; min-height: 100vh;">
+        <div style=" color: white; min-height: 100vh;">
             @yield('sidebar')
         </div>
 
         {{-- Page content --}}
-        <div style="flex: 1; padding: 20px;">
+        <div style="flex: 1; margin-left:230px; margin-top:20px; padding: 20px;">
             @yield('content')
         </div>
 
