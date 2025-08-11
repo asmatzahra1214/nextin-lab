@@ -13,6 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('Components.Navbar');
+});
+Route::get('/home', function () {
+    return view('Pages.Home');
+});
+// Route::get('/', function () {
+//     return view('Components.Sidebar');
+// });
+// Route::get('/', function () {
+//     return view('Components.Topbar');
+// });
+// Route::get('/', function () {
+//     return view('Components.Footer');
+
+// });
+
+
+Route::get('/projects', function () {
+    return view('pages.projects');
+});
+Route::get('/templates', function () {
+    return view('pages.templates');
+});
+Route::get('/lab', function () {
+    return view('pages.lab');
+
 });
