@@ -14,11 +14,13 @@
        font-family: 'Poppins', sans-serif;
         display: flex;
     }
+    
 
     /* Sidebar Styles */
     .sidebar {
         width: 230px;
-        background-color: rgba(13, 94, 73, 1);
+        /* background-color: rgba(10, 131, 131, 1); */
+         background: #35978d;
         color: white;
         height: 100vh;
         position: sticky;
@@ -50,12 +52,8 @@
 
     .sidebar ul li a:hover {
         color: black;
-        background: linear-gradient(
-            135deg,
-            rgba(28, 150, 118, 1) 0%,
-            rgba(13, 94, 73, 1) 100%
-        );
-    }
+         background: linear-gradient(
+            135deg, #35978dff , #00695C);
 
     /* Main content for testing */
     .content {
@@ -69,7 +67,7 @@
     line-height: 60px; /* Match navbar height */
     margin: 0;
     padding: 0;
-    color: white; /* or your navbar text color */
+    color: #044550ff; /* or your navbar text color */
 }
 </style>
 </head>
@@ -78,7 +76,9 @@
 <!-- Sidebar -->
 <div class="sidebar">
    
-<h2 class="navbar-title">NextIn Lab</h2>
+  <h2 class="navbar-title">
+      NextIn Lab  <i class="fas fa-code" style="margin-right: 8px;"></i> 
+    </h2>
     <ul>
         <li><a href="#">LEARN HTML</a></li>
         <li><a href="#">LEARN CSS</a></li>
@@ -93,12 +93,8 @@
     </ul>
 </div>
 
-<!-- Main Content -->
-<div class="content">
-    <h1>Welcome to Nextin Lab</h1>
-    <p>Scroll down to test sticky sidebar.</p>
-    <p style="height:2000px;"></p>
-</div>
+
+
 
 </body>
 </html>
