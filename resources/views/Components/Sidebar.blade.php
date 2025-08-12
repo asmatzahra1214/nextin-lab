@@ -18,7 +18,7 @@
     /* Sidebar Styles */
     .sidebar {
         width: 230px;
-        background-color: rgba(13, 94, 73, 1);
+        background-color: #35978dff;
         color: white;
         height: 100vh;
         position: sticky;
@@ -50,11 +50,7 @@
 
     .sidebar ul li a:hover {
         color: black;
-        background: linear-gradient(
-            135deg,
-            rgba(28, 150, 118, 1) 0%,
-            rgba(13, 94, 73, 1) 100%
-        );
+        background: linear-gradient(135deg, #35978dff, #00695C);
     }
 
     /* Main content for testing */

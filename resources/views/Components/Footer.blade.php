@@ -18,7 +18,7 @@
 
     /* Footer styling */
     footer {
-        background-color: rgba(16, 86, 69, 1); 
+        background-color: #00695C;; 
         color: white;
         text-align: center;
         padding: 10px;
