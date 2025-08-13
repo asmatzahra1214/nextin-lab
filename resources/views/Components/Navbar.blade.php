@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextIn Lab Navbar</title>
+    <title>NextIn Lab</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -18,14 +18,15 @@
             left: 230px; /* space for sidebar */
             right: 0;
             height: 60px;
-            background-color: rgba(16, 86, 69, 1); 
+            background-color: #00695C;
 
             color: white;
-            padding: 0 20px;
+            padding: 10 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             z-index: 1000;
+       
         }
 
         .logo {
@@ -48,7 +49,7 @@
         }
 
         .nav-links a:hover {
-            color: #00e0c6;
+             color: #15888bff;
         }
 
         .search-box {
@@ -80,7 +81,7 @@
         }
 
         .social-icons a:hover {
-            color: #00e0c6;
+            color: #15888bff;
         }
 
         .menu-toggle {
