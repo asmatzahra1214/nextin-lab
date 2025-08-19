@@ -45,3 +45,15 @@ Route::get('/lab', function () {
     return view('pages.lab');
 
 });
+Route::get('/projectdetails', function () {
+    return view('pages.projectdetails');
+
+});
+Route::get('/templatedemo', function () {
+    return view('pages.templatedemo');
+
+});
+Route::get('/templatedetails', function () {
+    return view('pages.templatedetails');
+
+});

@@ -128,7 +128,10 @@
             align-items: center;
             justify-content: center;
         }
-        
+        .project-title a{
+         list-style: none;
+         color:#00695C;
+        }
         .project-image img {
             width: 100%;
             height: 100%;
@@ -307,8 +310,9 @@
                     <div class="project-price">Free</div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Student App : NodeJS ExpressJS & MongoDB CRUD API Project</h3>
-                    <p class="project-desc">The Students CRUD App is a web-based application...</p>
+                    <h3 class="project-title"><a href="/projectdetails">Student App : NodeJS ExpressJS & MongoDB CRUD API Project</a></h3>
+                <!-- <h3 class="project-title">Student App : NodeJS ExpressJS & MongoDB CRUD API Project</h3> -->
+                    <p class="project-desc"> The Students CRUD App is a web-based application...</p>
                 </div>
                 <div class="project-footer">
                     <div class="project-stats">
@@ -329,7 +333,7 @@
                     <div class="project-price">Free</div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Contact App : NodeJS ExpressJS & MongoDB CRUD Project</h3>
+                    <h3 class="project-title"> <a href="/projectdetails">Contact App : NodeJS ExpressJS & MongoDB CRUD Project </a></h3>
                     <p class="project-desc">In this new project you will get the code of complete nodejs, expressjs and mon...</p>
                 </div>
                 <div class="project-footer">
@@ -351,7 +355,7 @@
                     <div class="project-price">Free</div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Contact App HTML Template</h3>
+                    <h3 class="project-title"><a href="/projectdetails"> Contact App HTML Template </a></h3>
                     <p class="project-desc">Responsive contact form with validation for websites.</p>
                 </div>
                 <div class="project-footer">
@@ -373,7 +377,7 @@
                     <div class="project-price">Free</div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">News Blog Project in NodeJS, ExpressJS & MongoDB</h3>
+                    <h3 class="project-title"> <a href="/projectdetails">News Blog Project in NodeJS, ExpressJS & MongoDB </a></h3>
                     <p class="project-desc">Manage news articles with categories and tags using NodeJS.</p>
                 </div>
                 <div class="project-footer">
@@ -395,7 +399,9 @@
                     <div class="project-price">₹350</div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">School Management Project in Laravel</h3>
+                    <h3 class="project-title"><a href="/projectdetails">School Management Project in Laravel
+                        </a>
+                    </h3>
                     <p class="project-desc">Automates school operations like student management and grading.</p>
                 </div>
                 <div class="project-footer">
@@ -417,7 +423,7 @@
                     <div class="project-price">₹250</div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Digital Products Selling Project in Laravel</h3>
+                    <h3 class="project-title"> <a href="/projectdetails">Digital Products Selling Project in Laravel </a></h3>
                     <p class="project-desc">Multi-vendor platform for selling digital products with payment integration.</p>
                 </div>
                 <div class="project-footer">
@@ -439,7 +445,7 @@
                     <div class="project-price">₹250</div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Tourism Management Project in Laravel</h3>
+                    <h3 class="project-title"><a href="/projectdetails">Tourism Management Project in Laravel </a></h3>
                     <p class="project-desc">Manages tours, bookings, and customer relationships for tourism businesses.</p>
                 </div>
                 <div class="project-footer">
@@ -461,7 +467,7 @@
                     <div class="project-price">₹250</div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Resume Management Project in Laravel</h3>
+                    <h3 class="project-title"><a href="/projectdetails">Resume Management Project in Laravel </a></h3>
                     <p class="project-desc">Create professional resumes with personal and professional details.</p>
                 </div>
                 <div class="project-footer">
@@ -483,7 +489,7 @@
                     <div class="project-price">₹250</div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Beauty Salon Project in Laravel</h3>
+                    <h3 class="project-title"><a href="/projectdetails">Beauty Salon Project in Laravel </a></h3>
                     <p class="project-desc">Manages appointments, staff, and services for beauty salons.</p>
                 </div>
                 <div class="project-footer">
@@ -505,7 +511,7 @@
                     <div class="project-price">₹300</div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Ecommerce Project in Laravel & Inertia Js</h3>
+                    <h3 class="project-title"><a href="/projectdetails">Ecommerce Project in Laravel & Inertia Js </a> </h3>
                     <p class="project-desc">E-commerce platform with Inertia.js and React for seamless shopping.</p>
                 </div>
                 <div class="project-footer">
