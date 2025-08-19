@@ -156,11 +156,19 @@
                             <small>{{ $course['views'] }} • {{ $course['time'] }}</small>
                         </div>
                     </div>
+                    
                 </div>
+                
                 @endforeach
+               <div class="view-more-container">
+                 <a href="/templates" style="align-items:center;" class="btn-view-more" aria-label="View more CodeLab projects">View More</a>
+                 </div> 
             </div>
+             
             @endforeach
+           
         </div>
+         
     </div>
 
     <!-- Projects Section -->
@@ -285,9 +293,15 @@
                         </div>
                         <button class="download-btn"><i class="fas fa-shopping-cart"></i> Purchase</button>
                     </div>
+                    
                 </div>
+               
             </div>
+             
         </div>
+    <div class="view-more-container">
+                <a href="/projects" class="btn-view-more" aria-label="View more CodeLab projects">View More</a>
+               </div>
     </section>
 
     <!-- Free Templates Section -->
@@ -355,7 +369,11 @@
                 </div>
             </div>
         </div>
+        <div class="view-more-container">
+      <a href="/templates" class="btn-view-more" aria-label="View more CodeLab projects">View More</a>
+    </div>
     </section>
+     
 </div>
 
 <style>
@@ -468,7 +486,7 @@ html, body {
 
 /* Courses Section */
 .courses-section {
-    background: linear-gradient(to right, #00695C, #1A3C34); /* --primary-dark to --text-dark */
+    background: linear-gradient(to right, #0e7c6fff, #1f997cff); /* --primary-dark to --text-dark */
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 2rem;
@@ -825,7 +843,7 @@ function scrollCourses(direction) {
         <div class="project-title">Ribbon Style 18</div>
         <div class="project-stats"><i class="fas fa-heart"></i> 789 <i class="fas fa-comment"></i> 0</div>
       </div>
-      <div class="project-card">
+      <!-- <div class="project-card">
         <img src="https://www.yahubaba.com/public/codelab/preloader-style-452.png" alt="Preloader Style 452" loading="lazy">
         <div class="project-title">Preloader Style 452</div>
         <div class="project-stats"><i class="fas fa-heart"></i> 1015 <i class="fas fa-comment"></i> 0</div>
@@ -839,7 +857,7 @@ function scrollCourses(direction) {
         <img src="https://www.yahubaba.com/public/codelab/css-text-effect-style-257.png" alt="CSS Text Effect Style 257" loading="lazy">
         <div class="project-title">CSS Text Effect 257</div>
         <div class="project-stats"><i class="fas fa-heart"></i> 4050 <i class="fas fa-comment"></i> 0</div>
-      </div>
+      </div> -->
       <div class="project-card">
         <img src="https://www.yahubaba.com/public/codelab/service-box-340.png" alt="Service Box 340" loading="lazy">
         <div class="project-title">Service Box 340</div>
@@ -858,7 +876,7 @@ function scrollCourses(direction) {
     </div>
 
     <div class="view-more-container">
-      <a href="/labs" class="btn-view-more" aria-label="View more CodeLab projects">View More</a>
+      <a href="/lab" class="btn-view-more" aria-label="View more CodeLab projects">View More</a>
     </div>
   </div>
 </section>

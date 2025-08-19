@@ -123,6 +123,7 @@
         <a href="{{url('/projects')}}">Code Projects</a>
         <a href="{{url('/templates')}}">Free Templates</a>
         <a href="{{url('/lab')}}">Code Lab</a>
+        <a href="{{url('/courses')}}">Courses</a>
         
         <div class="search-box">
             <input type="text" placeholder="Search...">
