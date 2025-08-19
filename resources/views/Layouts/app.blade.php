@@ -14,7 +14,7 @@
     <div style="display: flex;">
 
         {{-- Sidebar (changes per page) --}}
-        <div style=" color: white; min-height: 100vh;">
+        <div style="width:230px, color: white; min-height: 100vh; position:fixed; top:0; left:0;">
             @yield('sidebar')
         </div>
 

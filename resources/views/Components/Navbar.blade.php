@@ -18,7 +18,7 @@
             left: 230px; /* space for sidebar */
             right: 0;
             height: 60px;
-            background-color: rgba(16, 86, 69, 1); 
+            background-color: #00695C;; 
 
             color: white;
             padding: 0 20px;
@@ -48,7 +48,7 @@
         }
 
         .nav-links a:hover {
-            color: #00e0c6;
+            color: #B2DFDB;;
         }
 
         .search-box {
@@ -123,6 +123,7 @@
         <a href="{{url('/projects')}}">Code Projects</a>
         <a href="{{url('/templates')}}">Free Templates</a>
         <a href="{{url('/lab')}}">Code Lab</a>
+        <a href="{{url('/courses')}}">Courses</a>
         
         <div class="search-box">
             <input type="text" placeholder="Search...">
