@@ -154,7 +154,7 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     .course-details {
-      line-height: 1.6;
+      line-height: 1.5;
     }
     .course-details strong {
       font-size: 1.1rem;
