@@ -19,7 +19,6 @@
             right: 0;
             height: 60px;
             background-color: #00695C;; 
-
             color: white;
             padding: 0 20px;
             display: flex;
@@ -36,8 +35,8 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 30px;
-            padding-left:150px;
+            gap: 25px;
+            padding-left:100px;
         }
 
         .nav-links a {

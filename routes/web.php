@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CourseController; // Add this line to import the CourseController
+use App\Http\Controllers\ProjectController; 
+use App\Http\Controllers\TemplateController; 
+use App\Http\Controllers\LabController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +33,19 @@ Route::get('/templates', function () {
 
 Route::get('/lab', function () {
     return view('pages.lab');
+});
+
+Route::get('/projectdetails', function () {
+    return view('pages.projectdetails');
+});
+
+Route::get('/templatedemo', function () {
+    return view('pages.templatedemo');
+});
+
+
+Route::get('/templatedetails', function () {
+    return view('pages.templatedetails');
 });
 
 //This route is duplicated below and can be removed
@@ -79,11 +97,37 @@ Route::get('/courses/{courseId}/content/{topicId}', function ($courseId, $topicI
 Route::prefix('admin')->group(function() {
     // Dashboard
     Route::view('/', 'admin.dashbord'); // Fixed typo in 'dashboard'
-    
+   
     // Courses
    Route::get('/admincourses', [CourseController::class, 'showAdminCourses'])->name('admin.courses');
     Route::post('/courses', [CourseController::class, 'store'])->name('courses.store');
-    
- 
+
+    //projects and addedit projects
+Route::get('/adminprojects', [ProjectController::class, 'index'])->name('admin.projects');
+Route::get('/addeditprojects', [ProjectController::class, 'create'])->name('addeditprojects.create');
+Route::get('/addeditprojects/{id}', [ProjectController::class, 'edit'])->name('addeditprojects.edit');
+Route::get('/viewprojects/{id}', [ProjectController::class, 'show'])->name('viewprojects.show');
+
+// templates 
+// Route::get('/admintemplates', [TemplateController::class, 'get'])->name('admin.templates');
+
+Route::get('/admintemplates', [TemplateController::class, 'index'])->name('admin.templates');
+Route::get('/addedittemplates', [TemplateController::class, 'create'])->name('addedittemplates.create');
+Route::get('/addedittemplates/{id}', [TemplateController::class, 'edit'])->name('addedittemplates.edit');
+Route::get('/viewtemplates/{id}', [TemplateController::class, 'show'])->name('viewtemplates.show');
+
+// Lab Routes
+Route::get('/admin/lab', [LabController::class, 'index'])->name('admin.lab');
+
+// Lab Routes
+Route::get('/admin/lab/create', [LabController::class, 'create'])->name('addeditlab.create');
+Route::post('/admin/lab/store', [LabController::class, 'store'])->name('addeditlab.store');
+Route::get('/admin/lab/{id}/edit', [LabController::class, 'edit'])->name('addeditlab.edit');
+Route::put('/admin/lab/{id}/update', [LabController::class, 'update'])->name('addeditlab.update');
+Route::delete('/admin/lab/{id}/delete', [LabController::class, 'destroy'])->name('addeditlab.delete');
+Route::get('/admin/lab/{id}', [LabController::class, 'show'])->name('viewlab.show');
 });
+
+
+
 

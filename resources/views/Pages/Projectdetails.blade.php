@@ -852,10 +852,6 @@
         </div>
     </div>
 
-    <footer>
-        &copy; 2025 NextIn Lab. All rights reserved.
-    </footer>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Favorite button functionality

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,7 @@
     <title>Admin Panel</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .admin-container {
             display: grid;
@@ -13,27 +15,25 @@
             min-height: 100vh;
         }
         .sidebar {
-            @apply bg-blue-800 text-white;
+            @apply bg-green-900 text-white;
         }
         .content-area {
             @apply bg-gray-300;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
 <body>
     <div class="admin-container">
         @include('admin.partials.adminsidebar')
-        
-      
-            
-            <main class="p-6">
-                @yield('content')
-            </main>
-  
+        <main class="content-area p-6">
+            @yield('content')
+        </main>
     </div>
 
     <script>
-        // Simple tab functionality
         function openTab(evt, tabName) {
             let tabContents = document.getElementsByClassName("tab-content");
             for (let tab of tabContents) {
@@ -42,11 +42,11 @@
             
             let tabButtons = document.getElementsByClassName("tab-button");
             for (let btn of tabButtons) {
-                btn.classList.remove("bg-blue-600", "text-white");
+                btn.classList.remove("bg-green-700", "text-white");
             }
             
             document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.classList.add("bg-blue-600", "text-white");
+            evt.currentTarget.classList.add("bg-green-700", "text-white");
         }
     </script>
 </body>
