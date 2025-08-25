@@ -20,19 +20,19 @@
             <label for="categoryFilter">Category:</label>
             <select id="categoryFilter">
                 <option value="all">All Web Development</option>
-                <option value="frontend">Frontend</option>
-                <option value="backend">Backend</option>
-                <option value="fullstack">Full Stack</option>
-                <option value="frameworks">Frameworks</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="Full Stack">Full Stack</option>
+                <option value="Framework">Frameworks</option>
             </select>
         </div>
         <div class="filter-group">
             <label for="levelFilter">Level:</label>
             <select id="levelFilter">
                 <option value="all">All Levels</option>
-                <option value="beginner">Beginner</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="advanced">Advanced</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
             </select>
         </div>
         <div class="search-group">
@@ -41,201 +41,28 @@
         </div>
     </div>
 
-    <!-- Courses Grid -->
-    <div class="courses-grid-container">
-        @php
-            $webDevCourses = [
-                [
-                    'id' => 1,
-                    'title' => 'HTML & CSS Fundamentals', 
-                    'instructor' => 'Sarah Johnson', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=400&q=80',
-                    'views' => '5.2K views', 
-                    'time' => '1 week ago',
-                    'category' => 'frontend',
-                    'level' => 'beginner',
-                    'duration' => '6 hours',
-                    'lessons' => 24,
-                    'price' => 'Free'
-                ],
-                [
-                    'id' => 2,
-                    'title' => 'JavaScript Mastery', 
-                    'instructor' => 'Michael Chen', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&w=400&q=80',
-                    'views' => '8.7K views', 
-                    'time' => '2 weeks ago',
-                    'category' => 'frontend',
-                    'level' => 'intermediate',
-                    'duration' => '10 hours',
-                    'lessons' => 42,
-                    'price' => '$29.99'
-                ],
-                [
-                    'id' => 3,
-                    'title' => 'React.js Complete Guide', 
-                    'instructor' => 'Emma Wilson', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=400&q=80',
-                    'views' => '12.3K views', 
-                    'time' => '3 days ago',
-                    'category' => 'frontend',
-                    'level' => 'intermediate',
-                    'duration' => '15 hours',
-                    'lessons' => 58,
-                    'price' => '$49.99'
-                ],
-                [
-                    'id' => 4,
-                    'title' => 'Node.js & Express', 
-                    'instructor' => 'David Kim', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?auto=format&fit=crop&w=400&q=80',
-                    'views' => '6.5K views', 
-                    'time' => '5 days ago',
-                    'category' => 'backend',
-                    'level' => 'intermediate',
-                    'duration' => '12 hours',
-                    'lessons' => 45,
-                    'price' => '$39.99'
-                ],
-                [
-                    'id' => 5,
-                    'title' => 'PHP & MySQL for Backend', 
-                    'instructor' => 'Robert Taylor', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1600132806608-446446a9490a?auto=format&fit=crop&w=400&q=80',
-                    'views' => '3.8K views', 
-                    'time' => '2 weeks ago',
-                    'category' => 'backend',
-                    'level' => 'beginner',
-                    'duration' => '8 hours',
-                    'lessons' => 32,
-                    'price' => '$24.99'
-                ],
-                [
-                    'id' => 6,
-                    'title' => 'Laravel Framework Deep Dive', 
-                    'instructor' => 'Jennifer Lopez', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1624953587687-daf255b6b80a?auto=format&fit=crop&w=400&q=80',
-                    'views' => '4.1K views', 
-                    'time' => '1 week ago',
-                    'category' => 'backend',
-                    'level' => 'advanced',
-                    'duration' => '18 hours',
-                    'lessons' => 65,
-                    'price' => '$59.99'
-                ],
-                [
-                    'id' => 7,
-                    'title' => 'Vue.js from Scratch', 
-                    'instructor' => 'Thomas Baker', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=400&q=80',
-                    'views' => '7.2K views', 
-                    'time' => '4 days ago',
-                    'category' => 'frontend',
-                    'level' => 'beginner',
-                    'duration' => '9 hours',
-                    'lessons' => 36,
-                    'price' => '$34.99'
-                ],
-                [
-                    'id' => 8,
-                    'title' => 'MERN Stack Development', 
-                    'instructor' => 'Lisa Wong', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80',
-                    'views' => '9.8K views', 
-                    'time' => '1 day ago',
-                    'category' => 'fullstack',
-                    'level' => 'advanced',
-                    'duration' => '25 hours',
-                    'lessons' => 92,
-                    'price' => '$79.99'
-                ],
-                [
-                    'id' => 9,
-                    'title' => 'Django for Python Developers', 
-                    'instructor' => 'Kevin Smith', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=400&q=80',
-                    'views' => '5.4K views', 
-                    'time' => '3 weeks ago',
-                    'category' => 'backend',
-                    'level' => 'intermediate',
-                    'duration' => '14 hours',
-                    'lessons' => 51,
-                    'price' => '$44.99'
-                ],
-                [
-                    'id' => 10,
-                    'title' => 'Angular Framework Course', 
-                    'instructor' => 'Nancy Drew', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1581276879432-15e50529f34b?auto=format&fit=crop&w=400&q=80',
-                    'views' => '6.1K views', 
-                    'time' => '2 days ago',
-                    'category' => 'frontend',
-                    'level' => 'intermediate',
-                    'duration' => '16 hours',
-                    'lessons' => 60,
-                    'price' => '$54.99'
-                ],
-                [
-                    'id' => 11,
-                    'title' => 'WordPress Theme Development', 
-                    'instructor' => 'Paul Graham', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=400&q=80',
-                    'views' => '4.7K views', 
-                    'time' => '1 week ago',
-                    'category' => 'frontend',
-                    'level' => 'intermediate',
-                    'duration' => '11 hours',
-                    'lessons' => 40,
-                    'price' => '$39.99'
-                ],
-                [
-                    'id' => 12,
-                    'title' => 'RESTful API Design', 
-                    'instructor' => 'Amanda Lee', 
-                    'thumbnail' => 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80',
-                    'views' => '3.9K views', 
-                    'time' => '5 days ago',
-                    'category' => 'backend',
-                    'level' => 'advanced',
-                    'duration' => '8 hours',
-                    'lessons' => 30,
-                    'price' => '$29.99'
-                ]
-            ];
-        @endphp
-
-        @foreach($webDevCourses as $course)
-        <div class="course-card" data-category="{{ $course['category'] }}" data-level="{{ $course['level'] }}">
-            <div class="thumbnail-container">
-                <img src="{{ $course['thumbnail'] }}" alt="{{ $course['title'] }}">
-                <div class="thumbnail-overlay">
-                    <h3>{{ $course['title'] }}</h3>
-                    <p class="instructor">{{ $course['instructor'] }}</p>
-                    <small>{{ $course['views'] }} • {{ $course['time'] }}</small>
-                </div>
-            </div>
-            <div class="course-meta">
-                <span class="course-level {{ $course['level'] }}">{{ ucfirst($course['level']) }}</span>
-                <span class="course-duration">{{ $course['duration'] }}</span>
-                <span class="course-lessons">{{ $course['lessons'] }} lessons</span>
-            </div>
-              <div class="course-footer">
-        <span class="course-price">{{ $course['price'] }}</span>
-        <a href="{{ route('courses.detail', ['id' => $course['id']]) }}" class="course-btn">View Course</a>
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" style="text-align: center; padding: 2rem; display: none;">
+        <div style="font-size: 1.2rem; color: #00695C; margin-bottom: 1rem;">Loading courses...</div>
+        <div style="width: 50px; height: 50px; border: 5px solid #f3f3f3; border-top: 5px solid #00695C; border-radius: 50%; margin: 0 auto; animation: spin 1s linear infinite;"></div>
     </div>
-        </div>
-        @endforeach
+
+    <!-- Error Message -->
+    <div id="errorMessage" style="display: none; text-align: center; padding: 2rem; background: #ffebee; color: #c62828; border-radius: 8px; margin: 1rem 0;">
+        <p>Failed to load courses. Please try again later.</p>
+        <button onclick="loadCourses()" style="padding: 0.5rem 1rem; background: #c62828; color: white; border: none; border-radius: 4px; cursor: pointer;">Retry</button>
+    </div>
+
+    <!-- Courses Grid -->
+    <div class="courses-grid-container" id="coursesGrid">
+        <!-- Courses will be loaded dynamically from the backend -->
     </div>
 
     <!-- Pagination -->
-    <div class="pagination">
-        <a href="#" class="page-nav disabled">&laquo;</a>
-        <a href="#" class="page-active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#" class="page-nav">&raquo;</a>
+    <div class="pagination" id="pagination" style="display: none;">
+        <a href="#" class="page-nav disabled" id="prevPage">&laquo;</a>
+        <div id="pageNumbers"></div>
+        <a href="#" class="page-nav" id="nextPage">&raquo;</a>
     </div>
 </div>
 
@@ -481,6 +308,12 @@
     cursor: not-allowed;
 }
 
+/* Loading Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .filter-section {
@@ -518,61 +351,230 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Filter functionality
+    // Global variables
+    let allCourses = [];
+    let currentPage = 1;
+    const coursesPerPage = 12;
+    
+    // DOM elements
+    const coursesGrid = document.getElementById('coursesGrid');
+    const loadingIndicator = document.getElementById('loadingIndicator');
+    const errorMessage = document.getElementById('errorMessage');
+    const pagination = document.getElementById('pagination');
+    const prevPage = document.getElementById('prevPage');
+    const nextPage = document.getElementById('nextPage');
+    const pageNumbers = document.getElementById('pageNumbers');
+    
+    // Filter elements
     const categoryFilter = document.getElementById('categoryFilter');
     const levelFilter = document.getElementById('levelFilter');
     const searchInput = document.getElementById('courseSearch');
     const searchBtn = document.querySelector('.search-btn');
-    const courseCards = document.querySelectorAll('.course-card');
     
+    // Load courses from backend
+    function loadCourses() {
+        loadingIndicator.style.display = 'block';
+        errorMessage.style.display = 'none';
+        coursesGrid.innerHTML = '';
+        
+        fetch('http://127.0.0.1:8000/admin/courses')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                allCourses = data;
+                loadingIndicator.style.display = 'none';
+                renderCourses();
+                setupPagination();
+            })
+            .catch(error => {
+                console.error('Error loading courses:', error);
+                loadingIndicator.style.display = 'none';
+                errorMessage.style.display = 'block';
+            });
+    }
+    
+    // Render courses based on current filters and pagination
+    function renderCourses() {
+        const filteredCourses = filterCourses();
+        const startIndex = (currentPage - 1) * coursesPerPage;
+        const paginatedCourses = filteredCourses.slice(startIndex, startIndex + coursesPerPage);
+        
+        coursesGrid.innerHTML = '';
+        
+        if (paginatedCourses.length === 0) {
+            coursesGrid.innerHTML = `
+                <div style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+                    <h3>No courses found</h3>
+                    <p>Try adjusting your filters or search terms</p>
+                </div>
+            `;
+            return;
+        }
+        
+        paginatedCourses.forEach(course => {
+            const courseCard = createCourseCard(course);
+            coursesGrid.appendChild(courseCard);
+        });
+    }
+    
+    // Create course card HTML
+    function createCourseCard(course) {
+        const card = document.createElement('div');
+        card.className = 'course-card';
+        card.dataset.category = course.category;
+        card.dataset.level = course.level;
+        
+        // Format price for display
+        const price = course.price ? `$${(course.price / 100).toFixed(2)}` : 'Free';
+        
+        // Default thumbnail if none provided
+        const thumbnail = course.thumbnail || 'https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=400&q=80';
+        
+        // Format views for display
+        const views = course.views ? `${formatNumber(course.views)} views` : 'No views yet';
+        
+        // Format time for display
+        const time = course.time ? `${course.time} minutes ago` : 'Recently added';
+        
+        card.innerHTML = `
+            <div class="thumbnail-container">
+                <img src="${thumbnail}" alt="${course.title}">
+                <div class="thumbnail-overlay">
+                    <h3>${course.title}</h3>
+                    <p class="instructor">${course.instructor}</p>
+                    <small>${views} • ${time}</small>
+                </div>
+            </div>
+            <div class="course-meta">
+                <span class="course-level ${course.level.toLowerCase()}">${course.level}</span>
+                <span class="course-duration">${course.duration} minutes</span>
+                <span class="course-lessons">${course.lessons} lessons</span>
+            </div>
+            <div class="course-footer">
+                <span class="course-price">${price}</span>
+                <a href="/admin/coursedetail/${course.id}" class="course-btn">View Course</a>
+            </div>
+        `;
+        
+        return card;
+    }
+    
+    // Format large numbers with K/M suffixes
+    function formatNumber(num) {
+        if (num >= 1000000) {
+            return (num / 1000000).toFixed(1) + 'M';
+        }
+        if (num >= 1000) {
+            return (num / 1000).toFixed(1) + 'K';
+        }
+        return num;
+    }
+    
+    // Filter courses based on selected filters
     function filterCourses() {
         const categoryValue = categoryFilter.value;
         const levelValue = levelFilter.value;
         const searchValue = searchInput.value.toLowerCase();
         
-        courseCards.forEach(card => {
-            const cardCategory = card.dataset.category;
-            const cardLevel = card.dataset.level;
-            const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+        return allCourses.filter(course => {
+            const categoryMatch = categoryValue === 'all' || course.category === categoryValue;
+            const levelMatch = levelValue === 'all' || course.level === levelValue;
+            const searchMatch = course.title.toLowerCase().includes(searchValue) || 
+                               course.instructor.toLowerCase().includes(searchValue);
             
-            const categoryMatch = categoryValue === 'all' || cardCategory === categoryValue;
-            const levelMatch = levelValue === 'all' || cardLevel === levelValue;
-            const searchMatch = cardTitle.includes(searchValue);
-            
-            if (categoryMatch && levelMatch && searchMatch) {
-                card.style.display = 'flex';
-            } else {
-                card.style.display = 'none';
+            return categoryMatch && levelMatch && searchMatch;
+        });
+    }
+    
+    // Setup pagination
+    function setupPagination() {
+        const filteredCourses = filterCourses();
+        const totalPages = Math.ceil(filteredCourses.length / coursesPerPage);
+        
+        if (totalPages <= 1) {
+            pagination.style.display = 'none';
+            return;
+        }
+        
+        pagination.style.display = 'flex';
+        
+        // Update prev/next buttons
+        prevPage.classList.toggle('disabled', currentPage === 1);
+        nextPage.classList.toggle('disabled', currentPage === totalPages);
+        
+        // Generate page numbers
+        pageNumbers.innerHTML = '';
+        for (let i = 1; i <= totalPages; i++) {
+            const pageLink = document.createElement('a');
+            pageLink.href = '#';
+            pageLink.textContent = i;
+            if (i === currentPage) {
+                pageLink.classList.add('page-active');
+            }
+            pageLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                currentPage = i;
+                renderCourses();
+                setupPagination();
+            });
+            pageNumbers.appendChild(pageLink);
+        }
+        
+        // Add event listeners for prev/next buttons
+        prevPage.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (currentPage > 1) {
+                currentPage--;
+                renderCourses();
+                setupPagination();
+            }
+        });
+        
+        nextPage.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderCourses();
+                setupPagination();
             }
         });
     }
     
-    // Event listeners
-    categoryFilter.addEventListener('change', filterCourses);
-    levelFilter.addEventListener('change', filterCourses);
-    searchBtn.addEventListener('click', filterCourses);
-    searchInput.addEventListener('keyup', function(e) {
+    // Event listeners for filters
+    categoryFilter.addEventListener('change', () => {
+        currentPage = 1;
+        renderCourses();
+        setupPagination();
+    });
+    
+    levelFilter.addEventListener('change', () => {
+        currentPage = 1;
+        renderCourses();
+        setupPagination();
+    });
+    
+    searchBtn.addEventListener('click', () => {
+        currentPage = 1;
+        renderCourses();
+        setupPagination();
+    });
+    
+    searchInput.addEventListener('keyup', (e) => {
         if (e.key === 'Enter') {
-            filterCourses();
+            currentPage = 1;
+            renderCourses();
+            setupPagination();
         }
     });
-
-    // Pagination functionality
-    const paginationLinks = document.querySelectorAll('.pagination a:not(.page-nav)');
-    paginationLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Remove active class from all links
-            paginationLinks.forEach(l => l.classList.remove('page-active'));
-            
-            // Add active class to clicked link
-            this.classList.add('page-active');
-            
-            // In a real app, you would fetch the paginated data here
-            console.log('Page changed to:', this.textContent);
-        });
-    });
+    
+    // Initial load
+    loadCourses();
 });
 </script>
 @endsection

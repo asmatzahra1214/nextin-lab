@@ -9,20 +9,22 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-   public function up(): void
+    public function up(): void
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->string('instructor');
+            $table->text('description')->nullable();
+            $table->text('topics')->nullable();
             $table->string('thumbnail')->nullable();
-            $table->string('views')->nullable();
-            $table->string('time')->nullable();
+            $table->integer('views')->nullable();
+            $table->integer('time')->nullable(); // Changed to integer
             $table->string('category');
             $table->string('level');
-            $table->string('duration')->nullable();
+            $table->integer('duration')->nullable(); // Changed to integer
             $table->integer('lessons')->nullable();
-            $table->string('price')->nullable();
+            $table->integer('price')->nullable(); // Changed to integer
             $table->timestamps();
         });
     }
