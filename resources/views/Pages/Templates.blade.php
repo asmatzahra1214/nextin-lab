@@ -41,7 +41,6 @@
             font-size: 2em;
             color: var(--text-dark);
             margin-bottom: 20px;
-            /* text-align: center; */
         }
           .search-bar {
             display: flex;
@@ -143,6 +142,34 @@
             color: var(--text-light);
             box-shadow: 0 2px 5px var(--shadow);
         }
+            .demo-btn {
+            display: inline-block;
+          background: #f78940ff; 
+         color: #fff;
+        padding: 10px 20px;
+         border-radius: 6px;
+      text-decoration: none;
+       font-weight: 600;
+        transition: 0.3s;
+         border-radius: 20px; 
+            transition: transform 0.3s ease, background-color 0.3s ease;
+           color: var(--text-light);
+            box-shadow: 0 2px 5px var(--shadow);
+}
+         .download-btn {
+            display: inline-block;
+          /* background: #f78940ff;  */
+         color: #fff;
+        padding: 10px 20px;
+         border-radius: 6px;
+      text-decoration: none;
+       font-weight: 600;
+        transition: 0.3s;
+         border-radius: 20px; 
+            transition: transform 0.3s ease, background-color 0.3s ease;
+           color: var(--text-light);
+            box-shadow: 0 2px 5px var(--shadow);
+}
         .template-actions button:hover {
             transform: scale(1.1);
         }
@@ -167,6 +194,7 @@
         .template-card:hover::before {
             opacity: 1;
         }
+
         .pagination {
             text-align: center;
             margin-top: 30px;
@@ -266,10 +294,12 @@
                 <div class="template-title">Amaze</div>
                 <div class="template-framework">Framework : Bootstrap</div>
                 <div class="template-stats">❤ 26301 <span>⬇ 5127</span></div>
+            
                 <div class="template-actions">
-                    <button class="download-btn">Download</button>
-                    <button class="demo-btn">Demo</button>
-                </div>
+                <a href="{{ url('/templatedetails') }}" class="download-btn">Details</a>
+                <a href="{{ url('/templatedemo') }}" class="demo-btn">Demo</a>
+              </div>
+
             </div>
             <div class="template-card">
                 <img src="https://www.yahubaba.com/public/freetemplates/probusiness.jpg" alt="ProBusiness">
@@ -277,9 +307,9 @@
                 <div class="template-framework">Framework : Bootstrap</div>
                 <div class="template-stats">❤ 19812 <span>⬇ 3898</span></div>
                 <div class="template-actions">
-                    <button class="download-btn">Download</button>
-                    <button class="demo-btn">Demo</button>
-                </div>
+                <a href="{{ url('/templatedetails') }}" class="download-btn">Details</a>
+                <a href="{{ url('/templatedemo') }}" class="demo-btn">Demo</a>
+              </div>
             </div>
             <div class="template-card">
                 <img src="https://www.yahubaba.com/public/freetemplates/fortune.jpg" alt="Fortune">
@@ -287,9 +317,9 @@
                 <div class="template-framework">Framework : Bootstrap</div>
                 <div class="template-stats">❤ 12731 <span>⬇ 2208</span></div>
                 <div class="template-actions">
-                    <button class="download-btn">Download</button>
-                    <button class="demo-btn">Demo</button>
-                </div>
+                <a href="{{ url('/templatedetails') }}" class="download-btn">Details</a>
+                <a href="{{ url('/templatedemo') }}" class="demo-btn">Demo</a>
+              </div>
             </div>
             <div class="template-card">
                 <img src="https://www.yahubaba.com/public/freetemplates/electrify.jpg" alt="Electrify">
@@ -297,9 +327,9 @@
                 <div class="template-framework">Framework : Bootstrap</div>
                 <div class="template-stats">❤ 8243 <span>⬇ 1960</span></div>
                 <div class="template-actions">
-                    <button class="download-btn">Download</button>
-                    <button class="demo-btn">Demo</button>
-                </div>
+                <a href="{{ url('/templatedetails') }}" class="download-btn">Details</a>
+                <a href="{{ url('/templatedemo') }}" class="demo-btn">Demo</a>
+              </div>
             </div>
             <div class="template-card">
                 <img src="https://www.yahubaba.com/public/freetemplates/edge.jpg" alt="Edge">
@@ -307,9 +337,9 @@
                 <div class="template-framework">Framework : Bootstrap</div>
                 <div class="template-stats">❤ 7430 <span>⬇ 1846</span></div>
                 <div class="template-actions">
-                    <button class="download-btn">Download</button>
-                    <button class="demo-btn">Demo</button>
-                </div>
+                <a href="{{ url('/templatedetails') }}" class="download-btn">Details</a>
+                <a href="{{ url('/templatedemo') }}" class="demo-btn">Demo</a>
+              </div>
             </div>
             <div class="template-card">
                 <img src="https://www.yahubaba.com/public/freetemplates/dreamz.jpg" alt="Dreamz">
@@ -317,9 +347,9 @@
                 <div class="template-framework">Framework : Bootstrap</div>
                 <div class="template-stats">❤ 6322 <span>⬇ 1517</span></div>
                 <div class="template-actions">
-                    <button class="download-btn">Download</button>
-                    <button class="demo-btn">Demo</button>
-                </div>
+                <a href="{{ url('/templatedetails') }}" class="download-btn">Details</a>
+                <a href="{{ url('/templatedemo') }}" class="demo-btn">Demo</a>
+              </div>
             </div>
             <div class="template-card">
                 <img src="https://www.yahubaba.com/public/freetemplates/stylo.jpg" alt="Stylo">
@@ -327,9 +357,9 @@
                 <div class="template-framework">Framework : Bootstrap</div>
                 <div class="template-stats">❤ 6960 <span>⬇ 1574</span></div>
                 <div class="template-actions">
-                    <button class="download-btn">Download</button>
-                    <button class="demo-btn">Demo</button>
-                </div>
+                <a href="{{ url('/templatedetails') }}" class="download-btn">Details</a>
+                <a href="{{ url('/templatedemo') }}" class="demo-btn">Demo</a>
+              </div>
             </div>
             <div class="template-card">
                 <img src="https://www.yahubaba.com/public/freetemplates/everest.jpg" alt="Everest">
@@ -337,29 +367,29 @@
                 <div class="template-framework">Framework : Bootstrap</div>
                 <div class="template-stats">❤ 7170 <span>⬇ 1430</span></div>
                 <div class="template-actions">
-                    <button class="download-btn">Download</button>
-                    <button class="demo-btn">Demo</button>
-                </div>
+                <a href="{{ url('/templatedetails') }}" class="download-btn">Details</a>
+                <a href="{{ url('/templatedemo') }}" class="demo-btn">Demo</a>
+              </div>
             </div>
             <div class="template-card">
                 <img src="https://www.yahubaba.com/public/freetemplates/velocity.jpg" alt="Velocity">
                 <div class="template-title">Velocity</div>
                 <div class="template-framework">Framework : Bootstrap</div>
                 <div class="template-stats">❤ 6488 <span>⬇ 1537</span></div>
-                <div class="template-actions">
-                    <button class="download-btn">Download</button>
-                    <button class="demo-btn">Demo</button>
-                </div>
+               <div class="template-actions">
+                <a href="{{ url('/templatedetails') }}" class="download-btn">Details</a>
+                <a href="{{ url('/templatedemo') }}" class="demo-btn">Demo</a>
+              </div>
             </div>
             <div class="template-card">
                 <img src="https://www.yahubaba.com/public/freetemplates/rainy.jpg" alt="Rainy">
                 <div class="template-title">Rainy</div>
                 <div class="template-framework">Framework : Bootstrap</div>
                 <div class="template-stats">❤ 8777 <span>⬇ 1622</span></div>
-                <div class="template-actions">
-                    <button class="download-btn">Download</button>
-                    <button class="demo-btn">Demo</button>
-                </div>
+               <div class="template-actions">
+                <a href="{{ url('/templatedetails') }}" class="download-btn">Details</a>
+                <a href="{{ url('/templatedemo') }}" class="demo-btn">Demo</a>
+              </div>
             </div>
         </div>
         <div class="pagination">

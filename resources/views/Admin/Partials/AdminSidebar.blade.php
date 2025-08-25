@@ -10,9 +10,9 @@
                 </a>
             </li>
             <li>
-                <a href="{{ route('admin.courses') }}" class="flex items-center p-3 rounded hover:bg-gray-700">
+                <a href="{{ route('admin.course') }}" class="flex items-center p-3 rounded hover:bg-gray-700">
                  <i class="fas fa-book mr-3"></i>
-                  Courses
+                  Course
                 </a>
             </li>
             <li>
